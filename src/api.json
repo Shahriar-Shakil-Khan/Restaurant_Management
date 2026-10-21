@@ -1,0 +1,400 @@
+[
+  {    
+    "name": "Kacchi Biryani",
+    "category": "Biryani & Rice",
+    "price": 450,
+    "currency": "bdt",
+    "description": "Slow-cooked mutton and fragrant basmati rice layered with saffron, potato and aromatic spices.",
+    "ingredients": [
+      "Mutton",
+      "Basmati Rice",
+      "Saffron",
+      "Potato",
+      "Yogurt"
+    ],
+    "spiceLevel": 3,
+    "isVegetarian": false,
+    "isPopular": true,
+    "rating": 4.9,
+    "preparationTime": "45 min",
+    "status": "available",
+    "image": "https://www.tbsnews.net/sites/default/files/styles/infograph/public/images/2024/01/06/lamb-biryani-hero-01-sea-qiai-hero-bc09dcc1348f4876bdd2fa1e1a5f918c_0.jpg"
+  },
+  {
+     
+    "name": "Beef Tehari",
+    "category": "Biryani & Rice",
+    "price": 280,
+    "currency": "bdt",
+    "description": "Old Dhaka style tehari with tender beef pieces in mustard oil and whole spices.",
+    "ingredients": [
+      "Beef",
+      "Mustard Oil",
+      "Rice",
+      "Green Chili"
+    ],
+    "spiceLevel": 3,
+    "isVegetarian": false,
+    "isPopular": true,
+    "rating": 4.7,
+    "preparationTime": "30 min",
+    "status": "available",
+    "image": "https://cookishcreation.com/wp-content/uploads/2022/05/Beef-Tehari-Cookish-Creation.jpg"
+  },
+  {
+     
+    "name": "Chicken Morog Polao",
+    "category": "Biryani & Rice",
+    "price": 320,
+    "currency": "bdt",
+    "description": "Aromatic polao served with a juicy chicken roast in rich, mildly sweet gravy.",
+    "ingredients": [
+      "Chicken",
+      "Polao Rice",
+      "Ghee",
+      "Cardamom"
+    ],
+    "spiceLevel": 1,
+    "isVegetarian": false,
+    "isPopular": true,
+    "rating": 4.8,
+    "preparationTime": "35 min",
+    "status": "available",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/27/Morog_Polao_1.jpg"
+  },
+  {
+     
+    "name": "Chicken Biryani",
+    "category": "Biryani & Rice",
+    "price": 300,
+    "currency": "bdt",
+    "description": "Layered biryani with marinated chicken, boiled egg and crispy fried onions.",
+    "ingredients": [
+      "Chicken",
+      "Basmati Rice",
+      "Egg",
+      "Fried Onion"
+    ],
+    "spiceLevel": 2,
+    "isVegetarian": false,
+    "isPopular": false,
+    "rating": 4.6,
+    "preparationTime": "35 min",
+    "status": "available",
+    "image": "https://img.magnific.com/premium-photo/dum-handi-chicken-biryani-is-prepared-earthen-clay-pot-called-haandi-popular-indian-non-vegetarian-food_466689-52384.jpg?semt=ais_test_b&w=740&q=80"
+  },
+  {
+     
+    "name": "Plain Polao",
+    "category": "Biryani & Rice",
+    "price": 120,
+    "currency": "bdt",
+    "description": "Fragrant ghee rice, perfect with any curry from our menu.",
+    "ingredients": [
+      "Polao Rice",
+      "Ghee",
+      "Bay Leaf"
+    ],
+    "spiceLevel": 0,
+    "isVegetarian": true,
+    "isPopular": false,
+    "rating": 4.3,
+    "preparationTime": "15 min",
+    "status": "available",
+    "image": "https://cookingwithnelo.com/wp-content/uploads/2025/09/quick-chicken-pulao.jpg"
+  },
+  {
+  
+    "name": "Beef Bhuna Khichuri",
+    "category": "Biryani & Rice",
+    "price": 260,
+    "currency": "bdt",
+    "description": "Comforting rice and lentil khichuri served with spicy beef bhuna.",
+    "ingredients": [
+      "Rice",
+      "Lentil",
+      "Beef",
+      "Turmeric"
+    ],
+    "spiceLevel": 2,
+    "isVegetarian": false,
+    "isPopular": false,
+    "rating": 4.5,
+    "preparationTime": "30 min",
+    "status": "available",
+    "image": "https://rumkisgoldenspoon.com/wp-content/uploads/2021/05/Bhuna-khichuri-recipe.jpg"
+  },
+  {
+  
+    "name": "Beef Rezala",
+    "category": "Main Course",
+    "price": 380,
+    "currency": "bdt",
+    "description": "Creamy Mughlai-style beef curry with yogurt, white pepper and kewra water.",
+    "ingredients": [
+      "Beef",
+      "Yogurt",
+      "Cashew",
+      "Kewra"
+    ],
+    "spiceLevel": 2,
+    "isVegetarian": false,
+    "isPopular": true,
+    "rating": 4.7,
+    "preparationTime": "40 min",
+    "status": "available",
+    "image": "https://img.magnific.com/free-photo/delicious-goulash-stew-table_23-2149371729.jpg?semt=ais_hybrid&w=740&q=80"
+  },
+  {
+
+    "name": "Chicken Roast",
+    "category": "Main Course",
+    "price": 220,
+    "currency": "bdt",
+    "description": "Bengali style chicken roast, slightly sweet and rich in flavor.",
+    "ingredients": [
+      "Chicken",
+      "Onion",
+      "Ghee",
+      "Sugar"
+    ],
+    "spiceLevel": 1,
+    "isVegetarian": false,
+    "isPopular": false,
+    "rating": 4.5,
+    "preparationTime": "25 min",
+    "status": "available",
+    "image": "https://thumbs.dreamstime.com/b/roasted-chicken-13826525.jpg"
+  },
+  {
+
+    "name": "Mutton Kosha",
+    "category": "Main Course",
+    "price": 480,
+    "currency": "bdt",
+    "description": "Slow-cooked mutton in thick, dark masala until fork tender.",
+    "ingredients": [
+      "Mutton",
+      "Onion",
+      "Ginger",
+      "Garlic"
+    ],
+    "spiceLevel": 3,
+    "isVegetarian": false,
+    "isPopular": true,
+    "rating": 4.8,
+    "preparationTime": "50 min",
+    "status": "available",
+    "image": "https://atanurrannagharrecipe.com/wp-content/uploads/2022/12/Mutton-Kosha-Photo-01.jpg"
+  },
+  {
+
+    "name": "Beef Bhuna",
+    "category": "Main Course",
+    "price": 350,
+    "currency": "bdt",
+    "description": "Classic Bangladeshi beef bhuna with deep, roasted spices.",
+    "ingredients": [
+      "Beef",
+      "Onion",
+      "Mustard Oil",
+      "Chili"
+    ],
+    "spiceLevel": 3,
+    "isVegetarian": false,
+    "isPopular": false,
+    "rating": 4.6,
+    "preparationTime": "40 min",
+    "status": "available",
+    "image": "https://www.krumpli.co.uk/wp-content/uploads/2023/05/Beef-Bhuna-Curry-03.jpg"
+  },
+  {
+
+    "name": "Butter Chicken",
+    "category": "Main Course",
+    "price": 340,
+    "currency": "bdt",
+    "description": "Tender chicken in a velvety tomato and butter sauce.",
+    "ingredients": [
+      "Chicken",
+      "Butter",
+      "Tomato",
+      "Cream"
+    ],
+    "spiceLevel": 1,
+    "isVegetarian": false,
+    "isPopular": true,
+    "rating": 4.7,
+    "preparationTime": "30 min",
+    "status": "available",
+    "image": "https://thumbs.dreamstime.com/b/butter-chicken-curry-indian-dish-34601836.jpg"
+  },
+  {
+
+    "name": "Chicken Tikka Masala",
+    "category": "Main Course",
+    "price": 330,
+    "currency": "bdt",
+    "description": "Grilled chicken tikka simmered in a creamy spiced masala.",
+    "ingredients": [
+      "Chicken",
+      "Yogurt",
+      "Tomato",
+      "Cream"
+    ],
+    "spiceLevel": 2,
+    "isVegetarian": false,
+    "isPopular": false,
+    "rating": 4.6,
+    "preparationTime": "30 min",
+    "status": "available",
+    "image": "https://thumbs.dreamstime.com/b/chicken-tikka-masala-black-clay-bowl-traditional-indian-dish-chicken-tikka-masala-rice-151302223.jpg"
+  },
+  {
+
+    "name": "Duck Bhuna",
+    "category": "Main Course",
+    "price": 520,
+    "currency": "bdt",
+    "description": "Village style duck cooked slowly in rich spices and mustard oil.",
+    "ingredients": [
+      "Duck",
+      "Onion",
+      "Garlic",
+      "Mustard Oil"
+    ],
+    "spiceLevel": 3,
+    "isVegetarian": false,
+    "isPopular": false,
+    "rating": 4.5,
+    "preparationTime": "55 min",
+    "status": "available",
+    "image": "https://h7.alamy.com/comp/FCTRBJ/bhuna-chicken-curry-style-with-tomato-and-tamarind-marinade-FCTRBJ.jpg"
+  },
+  {
+
+    "name": "Ilish Bhapa",
+    "category": "Seafood",
+    "price": 650,
+    "currency": "bdt",
+    "description": "Hilsa steamed in mustard and coconut paste, a Bengali classic.",
+    "ingredients": [
+      "Hilsa",
+      "Mustard",
+      "Coconut",
+      "Green Chili"
+    ],
+    "spiceLevel": 2,
+    "isVegetarian": false,
+    "isPopular": true,
+    "rating": 4.9,
+    "preparationTime": "35 min",
+    "status": "available",
+    "image": "https://rannaghor.org/wp-content/uploads/2023/03/Untitled-design-21.webp"
+  },
+  {
+
+    "name": "Chingri Malai Curry",
+    "category": "Seafood",
+    "price": 580,
+    "currency": "bdt",
+    "description": "Juicy prawns cooked in creamy coconut milk gravy.",
+    "ingredients": [
+      "Prawn",
+      "Coconut Milk",
+      "Ghee",
+      "Cardamom"
+    ],
+    "spiceLevel": 1,
+    "isVegetarian": false,
+    "isPopular": true,
+    "rating": 4.8,
+    "preparationTime": "30 min",
+    "status": "available",
+    "image": "https://atanurrannagharrecipe.com/wp-content/uploads/2023/01/Chingri-Macher-Malai-Curry-Photo-02.jpg"
+  },
+  {
+
+    "name": "Rui Fish Kalia",
+    "category": "Seafood",
+    "price": 380,
+    "currency": "bdt",
+    "description": "Rohu fish in a rich ginger and onion based gravy.",
+    "ingredients": [
+      "Rohu",
+      "Ginger",
+      "Onion",
+      "Turmeric"
+    ],
+    "spiceLevel": 2,
+    "isVegetarian": false,
+    "isPopular": false,
+    "rating": 4.4,
+    "preparationTime": "30 min",
+    "status": "available",
+    "image": "https://thumbs.dreamstime.com/b/close-up-cooked-rohu-fish-fried-chopped-onions-green-chillies-close-up-cooked-rohu-fish-fried-chopped-onions-green-177673351.jpg"
+  },
+  {
+     
+    "name": "Prawn Bhuna",
+    "category": "Seafood",
+    "price": 520,
+    "currency": "bdt",
+    "description": "Large prawns stir-cooked with onion, tomato and spices.",
+    "ingredients": [
+      "Prawn",
+      "Onion",
+      "Tomato",
+      "Chili"
+    ],
+    "spiceLevel": 3,
+    "isVegetarian": false,
+    "isPopular": false,
+    "rating": 4.6,
+    "preparationTime": "25 min",
+    "status": "available",
+    "image": "https://res.cloudinary.com/jerrick/image/upload/d_642250b563292b35f27461a7.png,f_jpg,fl_progressive,q_auto,w_1024/685fa8db394951001dba3ffc.jpg"
+  },
+  {
+  
+    "name": "Grilled Rupchanda",
+    "category": "Seafood",
+    "price": 480,
+    "currency": "bdt",
+    "description": "Whole pomfret marinated in herbs and chargrilled to perfection.",
+    "ingredients": [
+      "Pomfret",
+      "Lemon",
+      "Garlic",
+      "Herbs"
+    ],
+    "spiceLevel": 1,
+    "isVegetarian": false,
+    "isPopular": false,
+    "rating": 4.5,
+    "preparationTime": "30 min",
+    "status": "available",
+    "image": "https://afeliaskitchen.com/wp-content/uploads/2014/06/Rupchanda-m-970x610.jpg"
+  },
+  {
+  
+    "name": "Borhani",
+    "category": "Drinks",
+    "price": 100,
+    "currency": "bdt",
+    "description": "Spiced mint yogurt drink, the perfect partner for biryani.",
+    "ingredients": [
+      "Yogurt",
+      "Mint",
+      "Black Salt",
+      "Cumin"
+    ],
+    "spiceLevel": 1,
+    "isVegetarian": true,
+    "isPopular": false,
+    "rating": 4.5,
+    "preparationTime": "5 min",
+    "status": "available",
+    "image": "https://manvsdrinks.com/wp-content/uploads/2026/07/borhani-hero-webp-1024x683.webp"
+  }
+]
