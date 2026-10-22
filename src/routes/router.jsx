@@ -6,10 +6,13 @@ import About from "../pages/About";
 import Menu from "../pages/Menu";
 import ContactUs from "../pages/ContactUs";
 import FoodDetails from "../pages/FoodDetails";
-import ManageFoods from "../pages/ManageFoods";
 import UpdateFoods from "../pages/UpdateFoods";
 import AddFoods from "../pages/AddFoods";
 import Dashboard from "../pages/Dashboard";
+import AdminProfile from "../pages/AdminProfile";
+import AdminProfileUpdate from "../pages/AdminProfileUpdate";
+import AdminLogin from "../pages/AdminLogin";
+import PrivateRoute from "./PrivateRoute";
 
 export const router = createBrowserRouter([
   {
@@ -20,7 +23,6 @@ export const router = createBrowserRouter([
         index: true,
         Component: Home,
       },
-
       {
         path: "food-details/:id",
         Component: FoodDetails,
@@ -28,39 +30,61 @@ export const router = createBrowserRouter([
           fetch(`http://localhost:3000/foods/${params.id}`),
       },
       {
-        path: "/contactUs",
+        path: "contactUs",
         Component: ContactUs,
       },
       {
-        path: "/dashboard",
-        Component: Dashboard,
+        path: "dashboard",
+        element: (
+          <PrivateRoute>
+            <Dashboard />
+          </PrivateRoute>
+        ),
       },
       {
-        path: "/menu",
+        path: "profile",
+        element: (
+          <PrivateRoute>
+            <AdminProfile />
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "profile-update",
+        element: (
+          <PrivateRoute>
+            <AdminProfileUpdate />
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "menu",
         Component: Menu,
       },
       {
-        path: "/manage-foods",
-        Component: ManageFoods,
+        path: "add-foods",
+        element: (
+          <PrivateRoute>
+            <AddFoods />
+          </PrivateRoute>
+        ),
       },
       {
-        path: "/add-foods",
-        Component: AddFoods,
+        path: "update-foods/:id",
+        element: (
+          <PrivateRoute>
+            <UpdateFoods />
+          </PrivateRoute>
+        ),
       },
       {
-        path: "/update-foods",
-        Component: UpdateFoods,
-      },
-      {
-        path: "/menu",
-        Component: Menu,
-      },
-
-      {
-        path: "/about",
+        path: "about",
         Component: About,
       },
-
+      {
+        path: "admin",
+        Component: AdminLogin,
+      },
       {
         path: "*",
         Component: NotFound,
