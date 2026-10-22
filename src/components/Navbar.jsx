@@ -1,82 +1,201 @@
 import { NavLink } from "react-router";
+
 export default function Navbar() {
   const links = (
     <>
       <li>
-        <NavLink to="/" >
+        <NavLink
+          to="/"
+          end
+          className={({ isActive }) =>
+            `rounded-lg px-4 py-2 text-sm font-semibold transition-all duration-200 ${
+              isActive
+                ? "bg-amber-500/10 text-amber-600"
+                : "text-base-content/75 hover:bg-base-200 hover:text-amber-600"
+            }`
+          }
+        >
           Home
         </NavLink>
       </li>
+
       <li>
-        <NavLink to="/menu" >
-            Menu
+        <NavLink
+          to="/menu"
+          className={({ isActive }) =>
+            `rounded-lg px-4 py-2 text-sm font-semibold transition-all duration-200 ${
+              isActive
+                ? "bg-amber-500/10 text-amber-600"
+                : "text-base-content/75 hover:bg-base-200 hover:text-amber-600"
+            }`
+          }
+        >
+          Menu
         </NavLink>
       </li>
-      <li>
-        <NavLink to="/recipes" >
-          Recipes
+
+       <li>
+        <NavLink
+          to="/dashboard"
+          className={({ isActive }) =>
+            `rounded-lg px-4 py-2 text-sm font-semibold transition-all duration-200 ${
+              isActive
+                ? "bg-amber-500/10 text-amber-600"
+                : "text-base-content/75 hover:bg-base-200 hover:text-amber-600"
+            }`
+          }
+        >
+          Dashboard
         </NavLink>
       </li>
+
       <li>
-        <NavLink to="/about" >
+        <NavLink
+          to="/manage-foods"
+          className={({ isActive }) =>
+            `rounded-lg px-4 py-2 text-sm font-semibold transition-all duration-200 ${
+              isActive
+                ? "bg-amber-500/10 text-amber-600"
+                : "text-base-content/75 hover:bg-base-200 hover:text-amber-600"
+            }`
+          }
+        >
+          Manage Foods
+        </NavLink>
+      </li>
+
+      <li>
+        <NavLink
+          to="/contactUs"
+          className={({ isActive }) =>
+            `rounded-lg px-4 py-2 text-sm font-semibold transition-all duration-200 ${
+              isActive
+                ? "bg-amber-500/10 text-amber-600"
+                : "text-base-content/75 hover:bg-base-200 hover:text-amber-600"
+            }`
+          }
+        >
+          Contact Us
+        </NavLink>
+      </li>
+         
+      <li>
+        <NavLink
+          to="/about"
+          className={({ isActive }) =>
+            `rounded-lg px-4 py-2 text-sm font-semibold transition-all duration-200 ${
+              isActive
+                ? "bg-amber-500/10 text-amber-600"
+                : "text-base-content/75 hover:bg-base-200 hover:text-amber-600"
+            }`
+          }
+        >
           About Us
         </NavLink>
       </li>
     </>
   );
+
   return (
-    <div>
-      <div className="max-lg:collapse bg-base-200  shadow-sm w-full rounded-md">
-        <input id="navbar-1-toggle" className="peer hidden" type="checkbox" />
-        <label
-          htmlFor="navbar-1-toggle"
-          className="fixed inset-0 hidden max-lg:peer-checked:block"
-        ></label>
-        <div className="collapse-title navbar">
-          <div className="navbar-start">
+    <header className="sticky top-0 z-50 w-full border-b border-base-300/70 bg-base-100/95 shadow-sm backdrop-blur-md">
+      <div className="navbar mx-auto min-h-[76px] max-w-7xl px-4 sm:px-6 lg:px-8">
+
+        {/* Mobile Menu */}
+        <div className="navbar-start">
+          <div className="dropdown lg:hidden">
             <label
-              htmlFor="navbar-1-toggle"
-              className="btn btn-ghost lg:hidden"
+              tabIndex={0}
+              role="button"
+              aria-label="Open navigation menu"
+              className="btn btn-ghost btn-square"
             >
               <svg
-                aria-label="Menu"
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={1.8}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4 7h16M4 12h16M4 17h16"
+                />
+              </svg>
+            </label>
+
+            <ul
+              tabIndex={0}
+              className="menu dropdown-content z-50 mt-3 w-60 rounded-2xl border border-base-300 bg-base-100 p-3 shadow-xl"
+            >
+              {links}
+            </ul>
+          </div>
+
+          {/* Restaurant Logo */}
+          <NavLink
+            to="/"
+            end
+            aria-label="Lihar home"
+            className="ml-1 flex items-center gap-3 lg:ml-0"
+          >
+            <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-amber-500 text-xl font-black text-white shadow-md shadow-amber-500/20 transition-transform duration-300 hover:rotate-3">
+              L
+            </span>
+
+            <span className="flex flex-col">
+              <span className="text-2xl font-extrabold leading-none tracking-tight text-base-content">
+                Lihar<span className="text-amber-500">.</span>
+              </span>
+              <span className="mt-1 text-[9px] font-semibold uppercase tracking-[0.22em] text-base-content/55">
+                Taste the difference
+              </span>
+            </span>
+          </NavLink>
+        </div>
+
+        {/* Desktop Navigation */}
+        <nav
+          aria-label="Main navigation"
+          className="navbar-center hidden lg:flex"
+        >
+          <ul className="menu menu-horizontal items-center gap-1 px-1">
+            {links}
+          </ul>
+        </nav>
+
+        {/* Right Side Branding */}
+        <div className="navbar-end">
+          <div className="hidden items-center gap-3 border-l border-base-300 pl-5 xl:flex">
+            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-amber-500/10 text-amber-600">
+              <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
+                strokeWidth={1.8}
               >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
+                  d="M12 8v4l3 2m6-2a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </svg>
-            </label>
-            <button className=" text-3xl">Lihar</button>
-          </div>
-          <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal px-1">{links}</ul>
-          </div>
-          <div className="navbar-end">
-            <input
-              type="text"
-              placeholder="Search"
-              className="input w-64 lg:w-auto"
-            />
-          </div>
-        </div>
+            </span>
 
-        <div className="collapse-content lg:hidden z-1">
-          <ul className="menu">
-            {/* <li>
-              <button>Item 3</button>
-            </li> */}
-            {links}
-          </ul>
+            <div>
+              <p className="text-xs font-bold text-base-content">
+                Freshly Prepared
+              </p>
+              <p className="mt-0.5 text-xs text-base-content/60">
+                Made with care, served with love
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </header>
   );
 }
