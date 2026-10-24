@@ -120,14 +120,14 @@ export default function Dashboard() {
                     />
                     <div>
                       <p className="font-semibold text-gray-900">{food.name}</p>
-                      <p className="text-xs text-gray-400">
+                      <p className="text-xs text-gray-900">
                         {food.isPopular && "🔥 Popular"}
                       </p>
                     </div>
                   </div>
                 </td>
 
-                <td>{food.category}</td>
+                <td className="font-semibold text-amber-600">{food.category}</td>
                 <td className="font-semibold text-amber-600">৳{food.price}</td>
 
                 <td>
